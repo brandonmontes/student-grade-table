@@ -1,3 +1,11 @@
-var start = new App()
+var mainTable = document.querySelector('table')
 
-start.start()
+
+
+var studentTable = new GradeTable(mainTable)
+
+
+
+var studentStart = new App(studentTable)
+
+studentStart.start()
