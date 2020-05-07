@@ -4,7 +4,6 @@ class GradeTable {
   }
   updateGrades(grades){
     this.grades = grades
-    console.log(grades)
     var studentTable = document.getElementById('student-table')
     for(var i = 0; i < grades.length; i++) {
       var row = document.createElement('tr')
