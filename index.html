@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Grade Table</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,11 +14,12 @@
   <div class="container-fluid">
     <header class="row justify-content-between">
       <h1 class="col">Student Grade Table</h1>
-      <h2 class="col text-right">Average Grade<span class="badge badge-secondary"></span></h2>
+      <h3 class="col text-right">Average Grade<span class="badge badge-secondary"></span></h3>
     </header>
   </div>
   <div class="container-fluid">
     <div class="row">
+      <div class="col-8">
       <div class="col-12">
         <table class="table table-striped">
           <thead class="thead-dark">
@@ -30,6 +32,40 @@
           <tbody id="student-table">
           </tbody>
         </table>
+      </div>
+      </div>
+      <div class="col">
+        <div class="col-auto">
+          <label class="sr-only" for="student-name">Name</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Student</div>
+            </div>
+            <input type="text" class="form-control" id="student-name" name="name" placeholder="Name">
+          </div>
+        </div>
+        <div class="col-auto">
+          <label class="sr-only" for="student-course">Course</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Course</div>
+            </div>
+            <input type="text" class="form-control" id="student-course" name="course" placeholder="Course">
+          </div>
+        </div>
+        <div class="col-auto">
+          <label class="sr-only" for="student-grade">Grade</label>
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">Grade</div>
+            </div>
+            <input type="text" class="form-control" id="student-grade" name="grade" placeholder="Grade">
+          </div>
+        </div>
+        <div class="col">
+          <button type="submit" class="button btn-primary btn-sm">Add</button>
+          <button type="reset" class="button btn-primary btn-sm">Cancel</button>
+        </div>
       </div>
     </div>
   </div>
