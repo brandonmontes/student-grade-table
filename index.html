@@ -19,52 +19,54 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-8">
-      <div class="col-12">
-        <table class="table table-striped">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">Student Name</th>
-              <th scope="col">Course</th>
-              <th scope="col">Grade</th>
-            </tr>
-          </thead>
-          <tbody id="student-table">
-          </tbody>
-        </table>
-      </div>
+        <div class="col-12">
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Student Name</th>
+                <th scope="col">Course</th>
+                <th scope="col">Grade</th>
+              </tr>
+            </thead>
+            <tbody id="student-table">
+            </tbody>
+          </table>
+        </div>
       </div>
       <div class="col">
-        <div class="col-auto">
-          <label class="sr-only" for="student-name">Name</label>
-          <div class="input-group mb-2">
-            <div class="input-group-prepend">
-              <div class="input-group-text">Student</div>
+        <form>
+          <div class="col-auto">
+            <label class="sr-only" for="student-name">Name</label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Student</div>
+              </div>
+              <input type="text" class="form-control" id="student-name" name="name" placeholder="Name">
             </div>
-            <input type="text" class="form-control" id="student-name" name="name" placeholder="Name">
           </div>
-        </div>
-        <div class="col-auto">
-          <label class="sr-only" for="student-course">Course</label>
-          <div class="input-group mb-2">
-            <div class="input-group-prepend">
-              <div class="input-group-text">Course</div>
+          <div class="col-auto">
+            <label class="sr-only" for="student-course">Course</label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Course</div>
+              </div>
+              <input type="text" class="form-control" id="student-course" name="course" placeholder="Course">
             </div>
-            <input type="text" class="form-control" id="student-course" name="course" placeholder="Course">
           </div>
-        </div>
-        <div class="col-auto">
-          <label class="sr-only" for="student-grade">Grade</label>
-          <div class="input-group mb-2">
-            <div class="input-group-prepend">
-              <div class="input-group-text">Grade</div>
+          <div class="col-auto">
+            <label class="sr-only" for="student-grade">Grade</label>
+            <div class="input-group mb-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Grade</div>
+              </div>
+              <input type="text" class="form-control" id="student-grade" name="grade" placeholder="Grade">
             </div>
-            <input type="text" class="form-control" id="student-grade" name="grade" placeholder="Grade">
           </div>
-        </div>
-        <div class="col">
-          <button type="submit" class="button btn-primary btn-sm">Add</button>
-          <button type="reset" class="button btn-primary btn-sm">Cancel</button>
-        </div>
+          <div class="col">
+            <button type="submit" class="button btn-primary btn-sm">Add</button>
+            <button type="reset" class="button btn-primary btn-sm">Cancel</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
