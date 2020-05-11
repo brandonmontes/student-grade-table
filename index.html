@@ -13,7 +13,7 @@
   <div class="container-fluid">
     <header class="row justify-content-between">
       <h1 class="col">Student Grade Table</h1>
-      <h3 class="col text-right">Average Grade<span class="badge badge-secondary"></span></h3>
+      <h3 class="col text-right">Average Grade<span class="badge badge-secondary">0</span></h3>
     </header>
   </div>
   <div class="container-fluid">
@@ -26,11 +26,13 @@
                 <th scope="col">Student Name</th>
                 <th scope="col">Course</th>
                 <th scope="col">Grade</th>
+                <th scope="col">Operations</th>
               </tr>
             </thead>
             <tbody id="student-table">
             </tbody>
           </table>
+          <p class="d-none">No Grades Recorded</p>
         </div>
       </div>
       <div class="col">
@@ -63,8 +65,8 @@
             </div>
           </div>
           <div class="col">
-            <button type="submit" class="button btn-primary btn-sm">Add</button>
-            <button type="reset" class="button btn-primary btn-sm">Cancel</button>
+            <button type="submit" class="button btn-success btn-sm">Add</button>
+            <button type="reset" class="button btn-light btn-sm">Cancel</button>
           </div>
         </form>
       </div>
