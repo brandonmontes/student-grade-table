@@ -7,68 +7,77 @@
   <title>Student Grade Table</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="container-fluid">
-    <header class="row justify-content-between">
-      <h1 class="col">Student Grade Table</h1>
-      <h3 class="col text-right">Average Grade<span class="badge badge-secondary">0</span></h3>
+    <header class="row justify-content-around my-4 border-bottom">
+      <div>
+        <h1 class="col text-center">Student Grade Table</h1>
+      </div>
+      <div>
+        <h3 class="col text-right">Average Grade <span class="badge badge-secondary">0</span></h3>
+      </div>
     </header>
   </div>
   <div class="container-fluid">
     <div class="row">
       <div class="col-8">
-        <div class="col-12">
-          <table class="table table-striped">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">Student Name</th>
-                <th scope="col">Course</th>
-                <th scope="col">Grade</th>
-                <th scope="col">Operations</th>
-              </tr>
-            </thead>
-            <tbody id="student-table">
-            </tbody>
-          </table>
-          <p class="d-none">No Grades Recorded</p>
+        <div class="col">
+          <div class="col-12">
+            <table class="table table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Student Name</th>
+                  <th scope="col">Course</th>
+                  <th scope="col">Grade</th>
+                  <th scope="col">Operations</th>
+                </tr>
+              </thead>
+              <tbody id="student-table">
+              </tbody>
+            </table>
+            <h4 class="d-none">No Grades Recorded</h4>
+          </div>
         </div>
       </div>
-      <div class="col">
-        <form>
-          <div class="col-auto">
-            <label class="sr-only" for="student-name">Name</label>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend">
-                <div class="input-group-text">Student</div>
+      <div class="col-3 form-width">
+        <div class="col">
+          <form>
+            <div class="col-auto">
+              <label class="sr-only" for="student-name">Name</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-user"></i></div>
+                </div>
+                <input type="text" class="form-control" id="student-name" name="name" placeholder="Student Name">
               </div>
-              <input type="text" class="form-control" id="student-name" name="name" placeholder="Name">
             </div>
-          </div>
-          <div class="col-auto">
-            <label class="sr-only" for="student-course">Course</label>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend">
-                <div class="input-group-text">Course</div>
+            <div class="col-auto">
+              <label class="sr-only" for="student-course">Course</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-book"></i></div>
+                </div>
+                <input type="text" class="form-control" id="student-course" name="course" placeholder="Student Course">
               </div>
-              <input type="text" class="form-control" id="student-course" name="course" placeholder="Course">
             </div>
-          </div>
-          <div class="col-auto">
-            <label class="sr-only" for="student-grade">Grade</label>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend">
-                <div class="input-group-text">Grade</div>
+            <div class="col-auto">
+              <label class="sr-only" for="student-grade">Grade</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fas fa-graduation-cap"></i></div>
+                </div>
+                <input type="text" class="form-control" id="student-grade" name="grade" placeholder="Student Grade">
               </div>
-              <input type="text" class="form-control" id="student-grade" name="grade" placeholder="Grade">
             </div>
-          </div>
-          <div class="col">
-            <button type="submit" class="button btn-success btn-sm">Add</button>
-            <button type="reset" class="button btn-light btn-sm">Cancel</button>
-          </div>
-        </form>
+            <div class="col">
+              <button type="submit" class="button btn-success btn-sm">Add</button>
+              <button type="reset" class="button btn-light btn-sm">Cancel</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>

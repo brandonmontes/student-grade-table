@@ -11,10 +11,10 @@ class GradeTable {
       studentTable.append(row)
     }
     if (grades.length <= 0) {
-      var noGrades = document.querySelector('p')
+      var noGrades = document.querySelector('h4')
       noGrades.classList.remove('d-none')
     } else {
-      var moreGrades = document.querySelector('p')
+      var moreGrades = document.querySelector('h4')
       moreGrades.classList.add('d-none')
     }
   }

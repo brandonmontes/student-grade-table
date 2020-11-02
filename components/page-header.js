@@ -6,7 +6,7 @@ class PageHeader {
     var avgGrades = this.headerElement.querySelector('.badge')
     avgGrades.textContent = newAverage
     if(isNaN(newAverage)){
-      avgGrades.textContent = 0
+      avgGrades.textContent = "N/A"
     }
   }
 }
