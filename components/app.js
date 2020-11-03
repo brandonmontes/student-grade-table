@@ -12,9 +12,11 @@ class App {
     this.pageHeader = pageHeader
     this.gradeForm = gradeForm
   }
+
   handleGetGradesError(err) {
     console.error(err)
   }
+
   handleGetGradesSuccess(grades) {
     this.gradeTable.updateGrades(grades)
     var total = 0
@@ -82,16 +84,3 @@ class App {
     this.getGrades()
   }
 }
-
-
-
-
-
-
-
-
-
-
-// headers: {
-//   "X-Access-Token": "IrpHRQu1"
-// },

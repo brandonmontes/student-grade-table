@@ -3,6 +3,7 @@ class GradeTable {
     this.tableElement = tableElement
     this.noGradesElement = noGradesElement
   }
+
   updateGrades(grades) {
     var studentTable = document.getElementById('student-table')
     $("#student-table").empty()
@@ -18,9 +19,11 @@ class GradeTable {
       moreGrades.classList.add('d-none')
     }
   }
+
   onDeleteClick(deleteGrade) {
     this.deleteGrade = deleteGrade
   }
+
   renderGradeRow(data, deleteGrade) {
     var row = document.createElement('tr')
     var deleteButtonRow = document.createElement('td')
