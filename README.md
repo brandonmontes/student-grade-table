@@ -4,7 +4,7 @@ An interactive JavaScript application that communicates with a server to manage 
 ## Technologies Used
 
 - JavaScript
--Jquery
+- Jquery
 - Bootstrap 4
 - HTML5
 - CSS3
@@ -40,8 +40,4 @@ Try the application live at [https://student-grade-table.brandonmontes.com](http
     cd student-grade-table
     ```
 
-1. Start the project. Once started you can view the application by opening http://localhost:3000 in your browser.
-
-    ```shell
-    npm run dev
-    ```
+1. Start the project. Once started you can view the application by opening the index.html in your browser
