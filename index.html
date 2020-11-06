@@ -51,7 +51,7 @@
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-user"></i></div>
                 </div>
-                <input type="text" class="form-control" id="student-name" name="name" placeholder="Student Name">
+                <input required type="text" class="form-control" id="student-name" name="name" placeholder="Student Name">
               </div>
             </div>
             <div class="col-auto">
@@ -60,7 +60,7 @@
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-book"></i></div>
                 </div>
-                <input type="text" class="form-control" id="student-course" name="course" placeholder="Student Course">
+                <input required type="text" class="form-control" id="student-course" name="course" placeholder="Student Course">
               </div>
             </div>
             <div class="col-auto">
@@ -69,11 +69,11 @@
                 <div class="input-group-prepend">
                   <div class="input-group-text"><i class="fas fa-graduation-cap"></i></div>
                 </div>
-                <input type="text" class="form-control" id="student-grade" name="grade" placeholder="Student Grade">
+                <input required type="number" class="form-control" id="student-grade" name="grade" placeholder="Student Grade">
               </div>
             </div>
             <div class="col">
-              <button type="submit" class="button btn-success btn-sm">Add</button>
+              <button type="submit" id="submitForm" class="button btn-success btn-sm">Add</button>
               <button type="reset" class="button btn-light btn-sm">Cancel</button>
             </div>
           </form>
