@@ -4,7 +4,7 @@ An interactive JavaScript application that communicates with a server to manage 
 ## Technologies Used
 
 - JavaScript
-- Jquery
+- jQuery
 - Bootstrap 4
 - HTML5
 - CSS3
